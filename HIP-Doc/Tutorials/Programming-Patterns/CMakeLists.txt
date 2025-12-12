@@ -21,13 +21,13 @@
 # SOFTWARE.
 
 cmake_minimum_required(VERSION 3.21 FATAL_ERROR)
-project(HIP-Doc-Tutorials LANGUAGES CXX)
-
-include(CTest)
+project(HIP-Doc-Programming-Guide LANGUAGES CXX)
 
 file(RELATIVE_PATH folder_bin ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/${folder_bin})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/${folder_bin})
 
-add_subdirectory(graph_api)
-add_subdirectory(Programming-Patterns)
+add_subdirectory(bfs)
+add_subdirectory(histogram)
+add_subdirectory(kmeans)
+add_subdirectory(matrix_multiplication)
+add_subdirectory(stencil)
